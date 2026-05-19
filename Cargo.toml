@@ -1,0 +1,16 @@
+[package]
+name = "flux-fracture"
+version = "0.1.0"
+edition = "2021"
+description = "Disjoint linear algebra for constraint systems — fracture into independent blocks, coalesce provably correct"
+license = "MIT"
+authors = ["Forgemaster ⚒️ <forgemaster@superinstance.org>"]
+
+[workspace]
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "fracture_bench"
+harness = false
