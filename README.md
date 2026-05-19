@@ -144,4 +144,13 @@ All four dependency structures (independent, block diagonal, chain, fully connec
 
 ## License
 
-MIT — Part of the [SuperInstance](https://github.com/SuperInstance) constraint-theory-ecosystem.
+MIT — Part of the [SuperInstance](https://github.com/SuperInstance) constraint-theory ecosystem.
+
+## Related Crates
+
+| Crate | Purpose |
+|-------|--------|
+| [plato-types](https://github.com/SuperInstance/plato-types) | Tile lifecycle, Lamport clocks |
+| [tensor-spline](https://github.com/SuperInstance/tensor-spline) | SplineLinear compression, Eisenstein lattice weights |
+| [plato-data](https://github.com/SuperInstance/plato-data) | CSV/JSONL/PLATO data loading |
+| [plato-training](https://github.com/SuperInstance/plato-training) | Micro model training and fleet deployment |
