@@ -9,6 +9,10 @@ repository = "https://github.com/SuperInstance/flux-fracture"
 keywords = ["constraint", "linear-algebra", "graph", "connected-components", "coalesce"]
 categories = ["mathematics", "algorithms", "science"]
 
+[features]
+default = ["std"]
+std = []
+
 [workspace]
 
 [dev-dependencies]

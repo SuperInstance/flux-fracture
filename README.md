@@ -2,6 +2,11 @@
 
 **Disjoint Linear Algebra for Constraint Systems** — fracture constraint systems into independent blocks, coalesce results provably correct.
 
+> **This crate handles the dependency graph analysis** — splitting independent constraints into parallel blocks. It does NOT do bounds checking. For actual constraint validation, use:
+> - **[flux-engine-c](https://github.com/SuperInstance/flux-engine-c)** — C single-header with checking + fracture + sediment
+> - **[flux-lib-py](https://github.com/SuperInstance/flux-lib-py)** — Python with checking + everything
+> - **[flux-check-js](https://github.com/SuperInstance/flux-check-js)** — TypeScript with checking + fracture
+
 ## How It Works
 
 Imagine you're checking 8 sensor readings against 8 safety limits. The naive approach checks all 8 together as one big system. But if sensor 1 has nothing to do with sensor 2 — they don't share any underlying variables — why treat them as coupled?

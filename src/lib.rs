@@ -15,6 +15,20 @@
 //! **Proof:** Each constraint violation is a Boolean event. For independent blocks,
 //! the event spaces are disjoint (no shared dimensions). The union of all
 //! violations = OR of block error masks. QED.
+//!
+//! ## `no_std` support
+//!
+//! Disable the default `std` feature to use with `alloc` only (e.g. embedded targets):
+//!
+//! ```toml
+//! [dependencies]
+//! flux-fracture = { version = "0.1.0", default-features = false }
+//! ```
+
+#![cfg_attr(not(feature = "std"), no_std)]
+
+#[cfg(not(feature = "std"))]
+extern crate alloc;
 
 pub mod graph;
 pub mod coalesce;

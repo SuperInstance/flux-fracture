@@ -1,5 +1,14 @@
 //! Coalescence verification — bitwise OR merge with zero false negatives.
 
+#[cfg(not(feature = "std"))]
+use alloc::format;
+#[cfg(not(feature = "std"))]
+use alloc::string::String;
+#[cfg(not(feature = "std"))]
+use alloc::vec;
+#[cfg(not(feature = "std"))]
+use alloc::vec::Vec;
+
 /// Coalesces block-level error masks into a unified error mask.
 ///
 /// ## Correctness Proof

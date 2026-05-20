@@ -1,5 +1,17 @@
 //! Dependency graph, connected-component fracture, and adaptive re-fracture.
 
+#[cfg(not(feature = "std"))]
+use alloc::collections::VecDeque;
+#[cfg(not(feature = "std"))]
+use alloc::format;
+#[cfg(not(feature = "std"))]
+use alloc::string::String;
+#[cfg(not(feature = "std"))]
+use alloc::vec;
+#[cfg(not(feature = "std"))]
+use alloc::vec::Vec;
+
+#[cfg(feature = "std")]
 use std::collections::VecDeque;
 
 // ---------------------------------------------------------------------------
