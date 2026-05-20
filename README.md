@@ -41,7 +41,7 @@ assert_eq!(total, 0b0111); // constraints 0, 1, 2 violated
 
 **Proof:** Each constraint violation is a Boolean event. For independent blocks, the event spaces are disjoint (no shared dimensions). The union of all violations = OR of block error masks. QED.
 
-No approximations. No false negatives. The math is airtight because the blocks are genuinely independent.
+No approximations. No false negatives. The result is provably identical to monolithic checking because the blocks share no dimensions.
 
 ## Dependency Structures
 
@@ -171,4 +171,4 @@ cargo bench
 
 ## License
 
-MIT — Part of the [SuperInstance](https://github.com/SuperInstance) constraint-theory ecosystem.
+MIT
